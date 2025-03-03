@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIFA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+<!---->
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #2f3e46, #4b7b8f);
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 0;
+            position: sticky;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            list-style-type: none;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        nav a:hover {
+            background: #f39c12;
+        }
+
+        .content {
+            flex: 1;
+            padding: 50px 20px;
+        }
+
+        .welcome {
+            font-size: 8rem;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            margin-top: 100px;
+        }
+
+        .about-heading {
+            font-size: 4rem;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            margin-top: 100px;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        .footer-content {
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        .footer-content a {
+            color: #f39c12;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About FIFA</a></li>
+            <li><a href="tournaments.html">Tournaments</a></li>
+            <li><a href="teams.html">Teams</a></li>
+            <li><a href="game.html">Gameplay</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <div class="welcome">WELCOME!</div>
+        <div class="about-heading">About This Website</div>
+        <p class="footer-content">
+            This website provides information about FIFA, its tournaments, and national football teams. Explore the latest rankings, upcoming events, and historical moments in football.
+        </p>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <strong>Contact Information</strong><br>
+            Email: <a href="mailto:info@fifa.org">info@fifa.org</a><br>
+            Phone: <a href="tel:+41432227777">+41 43 222 7777</a><br>
+            Address: FIFA-Strasse 20, 8044 Zurich, Switzerland
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIFA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #2f3e46, #4b7b8f);
+            color: #fff;
+            text-align: center;
+        }
+        nav {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+
+            justify-content: center;
+            gap: 20px;
+            list-style-type: none;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        nav a:hover {
+            background: #f39c12;
+        }
+
+        section {
+            padding: 50px 20px;
+        }
+
+        .team-container {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .team-card {
+            background: #333;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+            transition: transform 0.3s ease;
+        }
+
+        .team-card:hover {
+            transform: scale(1.05);
+        }
+
+        .team-card h2 {
+            color: #f39c12;
+            font-size: 2rem;
+        }
+
+        .team-card p {
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+
+        .highlight-btn {
+            background: #f39c12;
+            color: #000;
+            padding: 10px 15px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+            transition: background 0.3s ease;
+        }
+
+        .highlight-btn:hover {
+            background: #fff;
+            color: #f39c12;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About FIFA</a></li>
+            <li><a href="tournaments.html">Tournaments</a></li>
+            <li><a href="teams.html">Teams</a></li>
+            <li><a href="game.html">Gameplay</a></li>
+        </ul>
+    </nav>
+    <section>
+        <strong><h1>Top National Football Teams</h1></strong>
+      <br>
+        <div class="team-container">
+            <div class="team-card">
+                <h2>1. Argentina National Team</h2>
+                <p><strong>Coach:</strong> Lionel Scaloni</p>
+                <p><strong>History:</strong> Three-time World Cup winners (1978, 1986, 2022), Argentina has a rich footballing legacy.</p>
+                <p><strong>Legendary Players:</strong> Diego Maradona, Lionel Messi, Gabriel Batistuta</p>
+                <a class="highlight-btn" href="https://www.youtube.com/watch?v=d5SDdNqBFLw" target="_blank">Watch Best Moments</a>
+            </div>
+
+            <div class="team-card">
+                <h2>2. France National Team</h2>
+                <p><strong>Coach:</strong> Didier Deschamps</p>
+                <p><strong>History:</strong> France won two World Cups (1998, 2018) and are known for their attacking play.</p>
+                <p><strong>Legendary Players:</strong> Zinedine Zidane, Thierry Henry, Michel Platini</p>
+                <a class="highlight-btn" href="https://www.youtube.com/watch?v=UfaXc8sblGo" target="_blank">Watch Best Moments</a>
+            </div>
+
+            <div class="team-card">
+                <h2>3. Brazil National Team</h2>
+                <p><strong>Coach:</strong> Dorival Júnior</p>
+                <p><strong>History:</strong> The most successful national team with five World Cup titles (1958, 1962, 1970, 1994, 2002).</p>
+                <p><strong>Legendary Players:</strong> Pelé, Ronaldo, Ronaldinho</p>
+                <a class="highlight-btn" href="https://www.youtube.com/watch?v=y7mGzQsG8u8" target="_blank">Watch Best Moments</a>
+            </div>
+
+            <div class="team-card">
+                <h2>4. Portugal National Team</h2>
+                <p><strong>Coach:</strong> Roberto Martínez</p>
+                <p><strong>History:</strong> Portugal won the 2016 UEFA European Championship and the 2019 Nations League.</p>
+                <p><strong>Legendary Players:</strong> Eusébio, Luís Figo, Cristiano Ronaldo</p>
+                <a class="highlight-btn" href="https://www.youtube.com/watch?v=QXqWHbfzKUg" target="_blank">Watch Best Moments</a>
+            </div>
+
+            <div class="team-card">
+                <h2>5. Italy National Team</h2>
+                <p><strong>Coach:</strong> Luciano Spalletti</p>
+                <p><strong>History:</strong> Four-time World Cup champions (1934, 1938, 1982, 2006), Italy is famous for its defensive football.</p>
+                <p><strong>Legendary Players:</strong> Paolo Maldini, Roberto Baggio, Francesco Totti</p>
+                <a class="highlight-btn" href="https://www.youtube.com/watch?v=f3EbuUtU8R8" target="_blank">Watch Best Moments</a>
+            </div>
+
+            <div class="team-card">
+                <h2>6. England National Team</h2>
+                <p><strong>Coach:</strong> Gareth Southgate</p>
+                <p><strong>History:</strong> Won the 1966 World Cup and continues to be a major force in football.</p>
+                <p><strong>Legendary Players:</strong> Bobby Charlton, David Beckham, Wayne Rooney</p>
+                <a class="highlight-btn" href="https://www.youtube.com/watch?v=UZWZ1SxYozw" target="_blank">Watch Best Moments</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

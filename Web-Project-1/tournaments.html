@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIFA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #2f3e46, #4b7b8f); /* Gradient background */
+            color: #fff;
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            list-style-type: none;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        nav a:hover {
+            background: #f39c12;
+        }
+
+        section {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .tournament-table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        .tournament-table th, .tournament-table td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #fff;
+        }
+
+        .tournament-table th {
+            background: #333;
+            color: #fff;
+        }
+
+        .tournament-table td {
+            background: #444;
+        }
+
+        .tournament-table a {
+            color: #f39c12;
+            text-decoration: none;
+        }
+
+        .tournament-table a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer ul {
+            list-style-type: none;
+            font-size: 1rem;
+        }
+
+        footer ul li {
+            margin-bottom: 5px;
+        }
+
+        footer ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer ul li a:hover {
+            color: #f39c12;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About FIFA</a></li>
+            <li><a href="tournaments.html">Tournaments</a></li>
+            <li><a href="teams.html">Teams</a></li>
+            <li><a href="game.html">Gameplay</a></li>
+        </ul>
+    </nav>
+    <!-- Tournaments Section -->
+    <section>
+        <h2>Upcoming Tournaments</h2>
+        <p>Get ready for these exciting upcoming tournaments in the world of football!</p>
+
+        <!-- Tournament Table -->
+        <table class="tournament-table">
+            <thead>
+                <tr>
+                    <th>Tournament</th>
+                    <th>Teams</th>
+                    <th>Dates</th>
+                    <th>Watch</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>FIFA World Cup 2026</td>
+                    <td>Teams from around the world</td>
+                    <td>Nov 2026 - Dec 2026</td>
+                    <td><a href="https://www.fifa.com/worldcup/" target="_blank">Watch Here</a></td>
+                </tr>
+                <tr>
+                    <td>Copa America 2024</td>
+                    <td>South American teams</td>
+                    <td>June 2024 - July 2024</td>
+                    <td><a href="https://www.copaamerica.com/" target="_blank">Watch Here</a></td>
+                </tr>
+                <tr>
+                    <td>UEFA Euro 2024</td>
+                    <td>European teams</td>
+                    <td>June 2024 - July 2024</td>
+                    <td><a href="https://www.uefa.com/euro-2024/" target="_blank">Watch Here</a></td>
+                </tr>
+                <!-- Add more future tournaments as needed -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h3>Contact FIFA</h3>
+        <ul>
+            <li>Email: <a href="mailto:info@fifa.org">info@fifa.org</a></li>
+            <li>Phone: <a href="tel:+41432227777">+41 43 222 7777</a></li>
+            <li>Address: FIFA-Strasse 20, 8044 Zurich, Switzerland</li>
+        </ul>
+    </footer>
+
+</body>
+</html>

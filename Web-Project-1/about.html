@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIFA</title>
+
+    <!-- Embedded CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #2f3e46, #4b7b8f);
+            color: #fff;
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            list-style-type: none;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        nav a:hover {
+            background: #f39c12;
+        }
+
+        .hero {
+            background: url('https://via.placeholder.com/1500x800.png?text=FIFA+Banner') no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin: 20px 0;
+        }
+
+        .hero .btn {
+            background: #f39c12;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .hero .btn:hover {
+            background: #e67e22;
+        }
+
+        section {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        footer ul {
+            list-style-type: none;
+            font-size: 1rem;
+        }
+
+        footer ul li {
+            margin-bottom: 5px;
+        }
+
+        footer ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer ul li a:hover {
+            color: #f39c12;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About FIFA</a></li>
+            <li><a href="tournaments.html">Tournaments</a></li>
+            <li><a href="teams.html">Teams</a></li>
+            <li><a href="game.html">Gameplay</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h1>About FIFA</h1>
+        <p>Learn more about FIFA's role in global football</p>
+        <a href="tournaments.html" class="btn">See Upcoming Tournaments</a>
+    </section>
+
+    <section>
+        <h2>FIFA?</h2>
+        <p>FIFA (Fédération Internationale de Football Association) is the international governing body for football (soccer), futsal, and beach soccer. Founded in 1904, FIFA oversees the global organization of major tournaments such as the FIFA World Cup.</p>
+        <br>
+      <p>FIFA is responsible for setting the rules of the game, organizing international competitions, and promoting football development across all continents. The organization works with national football associations to ensure fair play and integrity in the sport.</p>
+       <br> 
+      <p>With 211 member associations, FIFA is one of the most influential sports organizations in the world. It not only organizes the FIFA World Cup but also manages women's football, youth competitions, and various international tournaments aimed at growing the sport worldwide.</p>
+       <br> 
+      <h2>FIFA's Governance and Structure?</h2>
+        <br>
+      <p>FIFA is governed by the FIFA Council, which is responsible for making key decisions regarding international football. The council consists of representatives from different continental federations such as UEFA (Europe), CONMEBOL (South America), CONCACAF (North America), CAF (Africa), AFC (Asia), and OFC (Oceania).</p>
+        <br> 
+      <p>The president of FIFA is the highest-ranking official and is elected by FIFA's Congress, which consists of representatives from all member associations. The current president is Gianni Infantino.</p>
+        <br>
+      <h2>FIFA's Major Contributions</h2>
+        <br>
+      <p>FIFA has played a significant role in promoting football worldwide, including launching initiatives such as the FIFA Forward Program, which funds football development projects globally. It also works to promote fair play, anti-discrimination policies, and gender equality in football.</p>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Contact FIFA</h3>
+                <ul>
+                    <li>Email: <a href="mailto:info@fifa.org">info@fifa.org</a></li>
+                    <li>Phone: <a href="tel:+41432227777">+41 43 222 7777</a></li>
+                    <li>Address: FIFA-Strasse 20, 8044 Zurich, Switzerland</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
